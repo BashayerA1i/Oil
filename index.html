@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />.   
+    
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <script src="app.js"></script>
+
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+
+
+
+  <div class='grid-container-100'>
+           
+    <p  style="padding-top: 150px; color: black; ">Saudi Arabia is the world’s largest producer <br> and exporter of oil
+      and has one quarter of the world’s known oil reserves. </p>
+         
+        <h1>  The Kingdom's Oil reserves </h1>
+     
+         <p id="value" style=" color: #fcdd03; font-size: 40px;"  >260</p>
+         <p style="font-size: 20px;">billion barrels </p>
+        </div>
+      
+
+  <div class="grid-container-80">
+  
+    <!--  Intro  -->
+  
+   
+       
+       
+    
+ 
+   <script>
+     
+     function animateValue(id, start, end, duration) {
+         if (start === end) return;
+         var range = end - start;
+         var current = start;
+         var increment = end > start? 1 : -1;
+         var stepTime = Math.abs(Math.floor(duration / range));
+         var obj = document.getElementById(id);
+         var timer = setInterval(function() {
+             current += increment;
+             obj.innerHTML = current;
+             if (current == end) {
+                 clearInterval(timer);
+             }
+         }, stepTime);
+     }
+     
+     animateValue("value", 230, 260, 1000);
+         
+         </script>
+      
+ 
+ 
+ 
+       
+ 
+   <p> in<span style="font-size: 50px; color: #0db131;">2019</span> the COVID-19 pandemic has caused profound influences for many industries,<br>  The energy industry is 
+     naturally not immune in the influences</p>
+ 
+     
+    <h1 >How Covid-19 affect oil market?</h1>   
+ 
+    <br> <br> <br> 
+ 
+         </div>
+ 
+        
+ 
+ 
+ 
+ 
+     <div class="grid-container-50">
+ 
+      <!--  Oil Price text    -->
+      
+ 
+    <p> Oil prices decline of <span style=" color: red;">8.0% </span>affecting by the pandemic </p>
+         <!--  Oil Price Tableau    -->
+         
+   <div  class='tableauPlaceholder' id='viz1636962658077' 
+   style='position: relative'><noscript><a href='#'>
+     <img alt='Saudi oil demand and average prices '
+      src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;
+      SaudiOilDemandandPriceOnthePandemic&#47;Saudioildemandandaverageprices&#47;1_rss.png' 
+      style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+        <param name='name' value='SaudiOilDemandandPriceOnthePandemic&#47;
+        Saudioildemandandaverageprices' /><param name='tabs' value='no' />
+        <param name='toolbar' value='yes' /><param name='static_image' 
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;
+        SaudiOilDemandandPriceOnthePandemic&#47;Saudioildemandandaverageprices&#47;1.png' />
+         <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+         <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+         <param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+       </div>                <script type='text/javascript'>              
+             var divElement = document.getElementById('viz1636962658077');  
+                               var vizElement = divElement.getElementsByTagName('object')[0];    
+                                               if ( divElement.offsetWidth > 800 ) 
+                                               { vizElement.style.width='550px';vizElement.style.height='327px';}
+                                                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='550px'
+                                                ;vizElement.style.height='327px';} 
+       else { vizElement.style.width='100%';vizElement.style.height='327px';}      
+                      var scriptElement = document.createElement('script');              
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';              
+                                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+           
+ 
+ 
+         
+ 
+     </div>
+ 
+ 
+ 
+     <div class="grid-container-80">
+ 
+ 
+       <!--     Productio Bar  -->
+ 
+ 
+       <div id="my_dataviz"></div>
+ 
+        
+          <!--   Production text   -->
+ 
+ <p> olorum rerum quas modi blanditiis eius provident. Ut, ame</p>
+     </div>
+    
+ 
+     
+     <div class="grid-container-50">
+ 
+ 
+    <!-- Refiend Product text     -->
+    <p>
+       Usually drops in oil prices are excellent news for downstream companies since they benefit <br>
+       greatly from reduced input costs. However, this current downturn is affecting both the commodity <br>
+       supply and demand sides and therefore negating that expected upside.<br>
+       Indeed, oil prices dropped owing to lingering oversupply but more importantly because of severe drops in the demand<br>
+       for products derived from that oil,<br>
+       such as gasoline, diesel and jet fuel.</p>
+         
+      <!-- Refiend Product tableau     -->
+ 
+      <div class='Tableau' class='tableauPlaceholder' id='viz1636981891563' style='position: relative'><noscript><a href='#'>
+        <img alt='Oil demand bymain petroleum '
+         src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PG&#47;PG3Y5RCRY&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;PG3Y5RCRY' />
+             <param name='toolbar' value='yes' /><param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PG&#47;PG3Y5RCRY&#47;1.png' />
+               <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+               <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+               <param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+              </div>                <script type='text/javascript'>                  
+                var divElement = document.getElementById('viz1636981891563');           
+                         var vizElement = divElement.getElementsByTagName('object')[0];   
+                                          if ( divElement.offsetWidth > 800 ) 
+                                          { vizElement.style.width='650px';vizElement.style.height='527px';} 
+                                          else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='650px';
+                                          vizElement.style.height='527px';} else 
+                                          { vizElement.style.width='100%';vizElement.style.height='527px';} 
+                                                              var scriptElement = document.createElement('script');                   
+                                                               scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+                                                                vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+ 
+ 
+     </div>
+ 
+ 
+ 
+     <div class="grid-container-50">
+ 
+         <!-- opic pic     -->
+          <img src="/OIP.jfif" width="700px" height="700px">
+              
+           <!-- opic text     -->
+           <p>
+            
+            In early March  <span style="font-size: 50px; color: blue "> 2020</span> 
+             OPEC officials presented Russia with an ultimatum to cut production 
+            by 1.5% of world supply. <br>
+<br>
+<span style="font-size: 50px; color:blue;"> At the end of March</span> 
+            
+           ‘OPEC +’ agreement  expire , cutting oil production by 2.1 million barrels a day. 
+            <br>
+
+            Saudi Arabia, which made a disproportionate amount of cuts to 
+            persuade Russia to stay in the deal, announced to its buyers on March 7 that they would 
+            increase production and cut their oil in April. This resulted in a more than 30% Brent crude 
+            price drop before a slight recovery and widespread turmoil in the financial markets
+           </p>
+ 
+      
+          </div>
+      
+ 
+     <div class="grid-container-60">
+ 
+ 
+      <!-- minstr     -->
+     
+     <div> 
+      <h1> I guess the worst part is over </h1>
+      <p>Saudi Arabia's Energy Minister Prince Abdulaziz bin Salman said on Monday <br>
+        that the worst was over for the oil market.<br>
+        "I guess the worst part is over," Prince Abdulaziz said<br>
+         at the virtual India Energy Forum by CERAWeek when asked to comment<br>
+          on the status of the oil market recovery.
+
+
+      </p>
+ 
+    </div>
+    <div>
+      <img src="/image0.png" width="300px" height="300px">
+    </div>
+ 
+ 
+ 
+     </div>
+    
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
